@@ -5,8 +5,8 @@
   
   <!-- France orthographe -->
   <meta charset="utf-8">
-  <!-- font1 -->
-
+  <!-- font1: title -->
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <!-- font2 -->
 
   <!-- bootstrap font-awsome-->
@@ -29,7 +29,7 @@
  <!-- VIEWPORT -->
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
  <!-- GOOGLE LIBRAIRY -->
- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
  <!-- My CSS -->
   <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
@@ -55,14 +55,14 @@
 				<h1>Meet your world</h1>
 			</div>
 			<div class="row pad-sm">
-				<h4>Get connected to people who you share interest with</h2>
+				<h4>Get connected to people who you share interest with</h4>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-3 col-md-3 col-sm-6 col-xs-6">
-					AUTOcomplete
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<input id="searchTextField" type="text" size="50">	
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6">
-					Filter
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<h6>Filter</h6>
 				</div>
 			</div>
 		</div>
@@ -74,7 +74,7 @@
 <footer>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-offset-3 col-md-2 col-sm-4" data-toggle="modal" data-target=".bs-example-modal-lg">
+			<div class="col-md-offset-3 col-md-2 col-sm-4" id="pointer1" data-toggle="modal" data-target=".bs-example-modal-lg">
 				Get started
 			</div>
 			<div class="col-md-2 col-sm-4">
