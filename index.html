@@ -6,15 +6,13 @@
   <!-- France orthographe -->
   <meta charset="utf-8">
   <!-- font1: title -->
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <!-- font2 -->
-
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <!-- bootstrap font-awsome-->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Jquerry  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -28,8 +26,6 @@
 
  <!-- VIEWPORT -->
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
- <!-- GOOGLE LIBRAIRY -->
- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
  <!-- My CSS -->
   <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
@@ -62,7 +58,10 @@
 					<input id="searchTextField" type="text" size="50">	
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12">
-					<h6>Filter</h6>
+					<h6 id="filter" class="pointer">Filter</h6>
+          <div id="box_filter">
+            
+          </div>
 				</div>
 			</div>
 		</div>
@@ -73,29 +72,71 @@
 
 <footer>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-offset-3 col-md-2 col-sm-4" id="pointer1" data-toggle="modal" data-target=".bs-example-modal-lg">
+		<div class="row" id="center">
+			<div class="col-md-4 col-sm-4" id="pointer1" data-toggle="modal" data-target=".bs-example-modal-lg">
 				Get started
 			</div>
-			<div class="col-md-2 col-sm-4">
+			<div class="col-md-4 col-sm-4">
 				Share
 			</div>
-			<div class="col-md-5 col-sm-4">
+			<div class="col-md-4 col-sm-4">
 				Support
 			</div>
 		</div>
 	</div>
 </footer>
 
-<!-- MODALS and others -->
+<!-- MODALS Get started -->
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      ...
+      <div class="container-fluid">
+      	<div class="row">
+      	    <div class="col-xs-12">
+      			<p>Explanation</p>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      			tempor incididunt ut labore et dolore magna aliqua.</p>
+      		</div>
+      		<div class="col-xs-2 padding-modal">
+      			<div>
+      				<div id="drop1" class="pointer">
+      					Log In
+      				</div>
+              <!-- DropDown Log In -->
+              <div id="drop2">
+                <input type="text" placeholder="Nickname">
+                <input type="text" placeholder="Password">
+              </div>
+      			</div>
+      		</div>
+      		<div class="col-xs-2 padding-modal">
+      			<div>
+              <div id="drop3" class="pointer">
+                Sign Up
+              </div>
+              <!-- DropDown Sign Up -->
+              <div id="drop4">
+                <input type="text" placeholder="Choose a nickname">
+                <input type="text" placeholder="Create a password">
+                <input type="text" placeholder="Confirm your password">
+                <input type="text" placeholder="Where do you live ?">
+                <input type="text" placeholder="what is your nationality ?">
+                <input type="text" placeholder="Which languages do you speak ?">
+              </div>
+            </div>
+      		</div>
+          <div class="col-xs-8" id="connect">
+            <p type="submit" id="pointer2">Connect !</p>
+          </div>
+      	</div>
+      </div>
     </div>
   </div>
 </div>
 
+
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="global.js"></script>
 </body>

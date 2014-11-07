@@ -5,6 +5,7 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
   	color: white;
+  	font-family: 'lato';
 }
 
 h1 {
@@ -40,4 +41,47 @@ input {
 
 #pointer1 {
 	cursor: pointer;
+}
+
+#pointer2 {
+	cursor: pointer;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+#center {
+	text-align: center;
+}
+
+.modal-content {
+	background-color: rgba(0, 0, 0, 0.6);
+	min-height: 43em;
+	color: white;
+}
+
+.padding-modal {
+	padding-top: 20%;
+}
+
+#drop2 {
+	color: white;
+	display: none;
+}
+
+#drop4 {
+	color: white;
+	display: none;
+}
+
+#connect {
+	padding-top: 50%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+#box_filter {
+	display: none;
+	border: solid;
 }
