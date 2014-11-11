@@ -12,6 +12,29 @@ $(document).ready(function (){
 		$('#box_filter').toggle();
 	});
 
+	//inside box filter
+
+	$("#drop5").click(function(){
+		$("#drop5bis").toggle();
+	});
+
+	$("#drop6").click(function(){
+		$("#drop6bis").toggle();
+	});
+
+	$("#drop7").click(function(){
+		$("#drop7bis").toggle();
+	});
+
+	//share
+	$("#drop8").click(function(){
+		$("#drop8bis").toggle();
+	});
+	//support
+	$("#drop9").click(function(){
+		$("#drop9bis").toggle();
+	});
+	
 	$(window).load(function() {
       $("[data-toggle='modal']").trigger('click');
 	});
@@ -19,6 +42,7 @@ $(document).ready(function (){
 
 $("[data-toggle='modal']").modal('click');
 });
+
 
 
 
