@@ -83,5 +83,36 @@ input {
 
 #box_filter {
 	display: none;
-	border: solid;
+	border: transparent;
+	height: 150px;
+	margin-left: -280px;
+}
+
+<!--inside box filter-->
+
+#drop5bis {
+
+	display: none;
+	color: white;
+}
+
+#drop6bis {
+	display: none;
+	color: white;
+}
+
+#drop7bis {
+	display: none;
+	color: white;
+}
+
+//share
+#drop8bis {
+	display: none;
+	color: white;
+}
+//support
+#drop9bis {
+	display: none;
+	color: white;
 }
