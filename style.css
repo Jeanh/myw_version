@@ -30,6 +30,11 @@ input {
 	background-color: transparent;
 }
 
+ul {
+	list-style: none; 
+	cursor: pointer;
+}
+
 .center {
 	text-align: center;
 	margin: 14%;
@@ -76,12 +81,27 @@ input {
 }
 
 #connect {
-	padding-top: 50%;
+	padding-top: 46%;
     text-align: right;
     padding-right: 5%;
 }
 
 #box_filter {
 	display: none;
-	border: solid;
+}
+
+.language{
+	display: none;
+}
+
+.nationality{
+	display: none;
+}
+
+.comming{
+	display: none;
+}
+
+.no_filter{
+	display: none;
 }
