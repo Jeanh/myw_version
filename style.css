@@ -88,6 +88,7 @@ ul {
 
 #box_filter {
 	display: none;
+	position:absolute;
 }
 
 .language{
