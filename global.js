@@ -37,6 +37,14 @@ $(document).ready(function (){
 $("[data-toggle='modal']").modal('click');
 });
 
+// JS is only used to add the <div>s
+var switches = document.querySelectorAll('input[type="checkbox"].ios-switch');
+
+for (var i=0, sw; sw = switches[i++]; ) {
+	var div = document.createElement('div');
+	div.className = 'switch';
+	sw.parentNode.insertBefore(div, sw.nextSibling);
+}
 
 
 
@@ -44,8 +52,14 @@ $("[data-toggle='modal']").modal('click');
 
 function initialize() {
 
+var options = {
+types: ['(regions)'],
+};
+
 var input = document.getElementById('searchTextField');
-var autocomplete = new google.maps.places.Autocomplete(input);
+var autocomplete = new google.maps.places.Autocomplete(input, options);
+
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
