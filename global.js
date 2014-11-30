@@ -10,8 +10,14 @@ $(document).ready(function (){
 		$('#drop2').hide();
 	});
 
+	$('#location').click(function(){
+		$('#box_location').toggle();
+		$('#box_filter').hide();
+	});
+
 	$('#filter').click(function(){
 		$('#box_filter').toggle();
+		$('#box_location').hide();
 	});
 
 	$('#L').click(function() {
