@@ -87,6 +87,11 @@ ul {
     padding-right: 5%;
 }
 
+#box_location {
+	display: none;
+	position: absolute;
+}
+
 #box_filter {
 	display: none;
 	position: absolute;
